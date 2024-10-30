@@ -42,7 +42,7 @@
     disabled = false;
   };
   username = {
-    format = "[$user]($style) ";
+    format = "[$user]($style)";
   };
   hostname = {
     ssh_symbol = "@";
