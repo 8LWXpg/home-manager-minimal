@@ -46,6 +46,6 @@
   };
   hostname = {
     ssh_symbol = "@";
-    format = "[$ssh_symbol$hostname]($style)";
+    format = "[$ssh_symbol$hostname]($style) ";
   };
 }
