@@ -29,6 +29,7 @@
     only_detached = false;
     tag_disabled = false;
     tag_max_candidates = 1;
+    tag_symbol = "";
   };
   shell = {
     format = "[$indicator](#FFFFFF)";
