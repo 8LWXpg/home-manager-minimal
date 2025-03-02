@@ -71,9 +71,6 @@
   programs = {
     bash = {
       enable = true;
-      profileExtra = ''
-        . $HOME/.nix-profile/etc/profile.d/nix.sh
-      '';
     };
     fzf.enable = true;
     neovim = {
