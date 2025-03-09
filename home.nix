@@ -19,6 +19,7 @@
   # environment.
   home.packages = with pkgs; [
     nil
+    nixfmt-rfc-style
     nodejs_23
   ];
 
