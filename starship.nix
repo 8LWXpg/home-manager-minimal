@@ -3,7 +3,7 @@
   add_newline = false;
   continuation_prompt = "[](#007ACC) ";
   format = ''
-    $directory$git_branch$git_commit$username$hostname$status$fill$cmd_duration$time$shell
+    $nix_shell$directory$git_branch$git_commit$username$hostname$status$fill$cmd_duration$time$shell
     [](#007ACC) '';
   cmd_duration = {
     min_time = 500;
@@ -30,6 +30,10 @@
     tag_disabled = false;
     tag_max_candidates = 1;
     tag_symbol = "";
+  };
+  nix_shell = {
+    format = "[\\($name\\)]($style) ";
+    disabled = false;
   };
   shell = {
     format = "[$indicator](#FFFFFF)";
