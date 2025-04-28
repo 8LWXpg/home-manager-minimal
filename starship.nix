@@ -25,7 +25,6 @@
     format = "[$branch(:$remote_branch)](#C2C206) ";
   };
   git_commit = {
-    commit_hash_length = 5;
     format = "[$tag\\($hash\\)](#C2C206) ";
     only_detached = false;
     tag_disabled = false;
