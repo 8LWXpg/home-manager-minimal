@@ -20,7 +20,6 @@
   home.packages = with pkgs; [
     nil
     nixfmt-rfc-style
-    nodejs_23
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -91,7 +90,6 @@
       package = pkgs.yazi-unwrapped;
       # defaults to false for unknow reasons
       enableBashIntegration = true;
-      enableZshIntegration = true;
     };
     zellij = {
       enable = true;
