@@ -95,6 +95,9 @@
       enable = true;
       settings = {
         theme = "tokyo-night";
+        pane_frames = false;
+        show_startup_tips = false;
+        show_release_notes = false;
       };
     };
     zoxide.enable = true;
