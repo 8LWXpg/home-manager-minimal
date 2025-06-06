@@ -88,11 +88,11 @@
     yazi = {
       enable = true;
       package = pkgs.yazi-unwrapped;
-      # defaults to false for unknow reasons
-      enableBashIntegration = true;
     };
     zellij = {
       enable = true;
+      attachExistingSession = true;
+      enableBashIntegration = true;
       settings = {
         theme = "tokyo-night";
         pane_frames = false;
