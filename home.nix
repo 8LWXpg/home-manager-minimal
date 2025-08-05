@@ -20,6 +20,7 @@
   home.packages = with pkgs; [
     nil
     nixfmt-rfc-style
+    tree-sitter
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -72,6 +73,7 @@
     bash = {
       enable = true;
     };
+    fd.enable = true;
     fzf.enable = true;
     neovim = {
       enable = true;
