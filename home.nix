@@ -18,9 +18,11 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    _7zz
     nil
     nixfmt-rfc-style
     tree-sitter
+    unzip # Used by Meson.nvim
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -70,9 +72,7 @@
   };
 
   programs = {
-    bash = {
-      enable = true;
-    };
+    bash.enable = true;
     fd.enable = true;
     fzf.enable = true;
     neovim = {
