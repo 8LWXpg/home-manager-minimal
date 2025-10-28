@@ -86,7 +86,10 @@
       enable = true;
       settings = import ./starship.nix;
     };
-    tealdeer.enable = true;
+    tealdeer = {
+      enable = true;
+      settings.updates.auto_update = true;
+    };
     yazi = {
       enable = true;
       package = pkgs.yazi-unwrapped;
