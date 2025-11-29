@@ -19,8 +19,8 @@
   # environment.
   home.packages = with pkgs; [
     _7zz
-    nil
-    nixfmt-rfc-style
+    nixd
+    nixfmt
     tree-sitter
     unzip # Used by Meson.nvim
   ];
