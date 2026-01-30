@@ -104,11 +104,13 @@
       attachExistingSession = true;
       enableBashIntegration = true;
       settings = {
-        theme = "tokyo-night";
+        theme = "catppuccin-mocha";
         pane_frames = false;
         show_startup_tips = false;
         show_release_notes = false;
       };
+      # Unlock-first keymap generated from zellij
+      extraConfig = builtins.readFile ./zellij.kdl;
     };
     zoxide.enable = true;
   };
