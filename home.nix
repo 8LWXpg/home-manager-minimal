@@ -19,6 +19,7 @@
   # environment.
   home.packages = with pkgs; [
     _7zz
+    tree-sitter
     nixd
     nixfmt
     tree-sitter
@@ -75,6 +76,10 @@
     bash.enable = true;
     fd.enable = true;
     fzf.enable = true;
+    lazygit = {
+      enable = true;
+      settings = import ./lazygit.nix;
+    };
     neovim = {
       enable = true;
       viAlias = true;
